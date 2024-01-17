@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/selectedWordListSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/word_lists"
+        android:layout_below="@id/progressTextView"/>
+
+    <Button
+        android:id="@+id/pronounceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronounce Current Word"
+        android:layout_below="@id/selectedWordListSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/spellingGuessEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pronounceButton"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your guess"/>
+
+    <Button
+        android:id="@+id/submitGuessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Guess"
+        android:layout_below="@id/spellingGuessEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/resetAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset All"
+        android:layout_below="@id/progressTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/dancingDogImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/submitGuessButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:src="@drawable/dogwinking"/> <!-- replace with your animated GIF -->
+
+</RelativeLayout>

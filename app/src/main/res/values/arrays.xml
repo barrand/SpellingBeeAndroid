@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="word_lists">
+        <item>neverTriedWords</item>
+        <item>allWords</item>
+        <item>correctWords</item>
+        <item>incorrectWords</item>
+    </string-array>
+</resources>
